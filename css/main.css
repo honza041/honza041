@@ -1,0 +1,461 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #FF8800;
+            box-shadow: 0 0 0 0 #FF8800;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #FF8800;
+            box-shadow: 0 0 0 0 #FF8800;
+  }
+}
+
+body {
+  background-color: #ffffff;
+  height: 100vh;
+  font-family: 'Source Sans Pro';
+}
+
+.container {
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.image {
+  width: 100%;
+  max-width: 1010px;
+  position: relative;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+section.image .main-img {
+  min-width: 87%;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+section.image .price-info {
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  padding: 13px 54px 13px 21px;
+  background-color: #ffffff;
+  -webkit-box-shadow: -8px 14px 27px 0px rgba(0, 0, 0, 0.16);
+          box-shadow: -8px 14px 27px 0px rgba(0, 0, 0, 0.16);
+  border-radius: 12px;
+}
+
+section.image .price-info h3 {
+  color: #0D9206;
+  font-size: 38px;
+}
+
+section.image .price-info hr {
+  width: 170px;
+  border: 2px solid #FF8800;
+  margin-bottom: 13px;
+}
+
+section.image .price-info p {
+  font-size: 32px;
+}
+
+section.image .wrapper {
+  position: absolute;
+  left: 20px;
+  top: 247px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.image .wrapper .button {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  background: #ffffff;
+  margin-bottom: 30px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+section.image .wrapper .button .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  border: 2px solid #0D9206;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.image .wrapper .button .icon .icon-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35px;
+  height: 35px;
+}
+
+section.image .wrapper .button .icon-text {
+  display: none;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 25px;
+  padding-right: 25px;
+  background-color: #ffffff;
+}
+
+section.image .wrapper .button:hover, section.image .wrapper .button:hover .icon {
+  width: auto;
+  background-color: #789376;
+  border: 2px solid #789376;
+}
+
+section.image .wrapper .button:hover {
+  border: none;
+}
+
+section.image .wrapper .button:hover .icon .icon-img {
+  padding-left: 25px;
+}
+
+section.image .wrapper .button:hover .icon-text {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #789376;
+}
+
+section.image .wrapper .button:last-child {
+  margin-top: 25px;
+}
+
+section.image .trips-more {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.image .trips-more .trips-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 7px 20px 0px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 7px 20px 0px rgba(0, 0, 0, 0.16);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+section.image .trips-more .trips-button img {
+  width: 26px;
+  height: 26px;
+  vertical-align: middle;
+}
+
+section.image .trips-more a {
+  display: inline-block;
+  margin-left: 27px;
+  color: #789376;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+section.content {
+  width: 100%;
+  max-width: 910px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+section.content h1 {
+  font-size: 90px;
+  line-height: 105px;
+  padding-left: 36px;
+  padding-top: 30px;
+}
+
+section.content h1 span {
+  color: #0D9206;
+}
+
+section.content .content-para {
+  border-left: 4px solid #0D9206;
+  width: 100%;
+  max-width: 665px;
+  padding-left: 36px;
+  margin-top: 20px;
+}
+
+section.content .content-para p {
+  color: #7D7D7D;
+  line-height: 40px;
+  font-size: 26px;
+}
+
+section.content .content-para .content-btn {
+  display: inline-block;
+  padding: 11px 44px;
+  font-size: 27px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #FF8800;
+  margin-top: 40px;
+}
+
+section.content .content-para .content-btn:hover, section.content .content-para .content-btn:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  -webkit-box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+          box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+}
+
+section.content .carousel {
+  position: relative;
+  height: auto;
+  margin-top: 70px;
+}
+
+section.content .carousel .arrow-next, section.content .carousel .next2 {
+  position: absolute;
+  top: 60%;
+  right: 50px;
+  z-index: 10;
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  opacity: 0.8;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+section.content .carousel .arrow-next img, section.content .carousel .next2 img {
+  width: 30px;
+  height: 30px;
+}
+
+section.content .carousel .next2 {
+  right: 121px;
+  width: auto;
+  padding: 12px 26px;
+  font-size: 26px;
+  color: #0D9206;
+}
+
+section.content .slider {
+  overflow: hidden;
+  width: 1127px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section.content .slider img {
+  width: 365px;
+}
+
+section.content .abs-box {
+  position: absolute;
+  top: 230px;
+  right: 0;
+}
+
+@media only screen and (max-width: 1600px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.content h1 {
+    padding-left: 0;
+  }
+  section.content .slider {
+    width: 100%;
+    max-width: 1200px;
+  }
+  section.content .slider img {
+    width: unset;
+  }
+  section.content, section.image {
+    max-width: 1200px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    padding: 0 20px;
+  }
+  section.content {
+    overflow: unset;
+  }
+  section.content .slider {
+    width: 100%;
+  }
+  section.image .main-img {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  section.content h1 {
+    font-size: 70px;
+    line-height: 65px;
+    padding-top: 20px;
+  }
+  section.content .content-para p {
+    line-height: 30px;
+    font-size: 20px;
+  }
+  section.content .content-para .content-btn {
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 7px 30px;
+  }
+  section.content .carousel {
+    margin-top: 35px;
+  }
+  section.content .carousel .arrow-next {
+    height: 40px;
+  }
+  section.content .carousel .next2 {
+    font-size: 20px;
+    padding: 0 15px;
+  }
+  section.image .price-info {
+    top: 25px;
+    right: 5px;
+  }
+  section.image .price-info h3 {
+    font-size: 24px;
+  }
+  section.image .price-info p {
+    font-size: 20px;
+  }
+  section.image .price-info hr {
+    width: 80%;
+    margin-bottom: 5px;
+  }
+  section.image .wrapper {
+    top: 25px;
+    left: 0;
+  }
+  section.image .wrapper .button, section.image .wrapper .button .icon {
+    width: 50px;
+    height: 50px;
+  }
+  section.image .wrapper .button {
+    margin-bottom: 20px;
+  }
+  section.image .trips-more {
+    left: 0;
+  }
+  section.image .trips-more .trips-button {
+    width: 50px;
+    height: 50px;
+  }
+  section.image .trips-more a {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .container {
+    padding: 0 15px;
+  }
+  section.content h1 {
+    font-size: 55px;
+    line-height: 50px;
+    margin-top: 15px;
+    padding: 0;
+  }
+  section.content .content-para {
+    padding-left: 15px;
+  }
+  section.content .content-para p {
+    line-height: 26px;
+  }
+  section.content .carousel {
+    margin-top: 20px;
+  }
+  section.content .carousel .next2 {
+    font-size: 18px;
+    padding: 0 10px;
+    right: 100px;
+  }
+  section.content .carousel .arrow-next:first-child {
+    width: 40px;
+  }
+  section.image {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  section.image .price-info {
+    padding: 10px 15px;
+    top: -40px;
+  }
+  section.image .wrapper {
+    top: -40px;
+  }
+  section.image .trips-more {
+    bottom: -35px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

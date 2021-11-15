@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$primary-color:#0D9206;
+$secondary-color: #789376;
+$comp-color:#FF8800;
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 $comp-color; }
+}
+
+
+
